@@ -15,4 +15,18 @@
     "dialect": "mysql"
   }
 }
+````
 once you've added your db config as listed above, go to the src folder from your terminal and execute `npx sequelize db:create`
+then execute `npx sequelize db:migrate`
+````
+
+
+### DB DEsign
+- Airplane Table
+-Flights
+-Airport
+-city
+
+-a flight belongs to an airplane but one airplane can be used in multiple flights
+-a City  has many airports but one airport belongs to a city 
+-One airpoart can have many flights, but a flight belongs to one airport
