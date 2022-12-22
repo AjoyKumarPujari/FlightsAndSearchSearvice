@@ -46,25 +46,24 @@ const destory = async (req, res ) =>{
     }
 }
 //GET -> city/:id
-const get = async (req, res ) =>{
-    try{
+const get = async (req, res) => {
+    try {
         const response = await cityService.getCity(req.params.id);
         return res.status(200).json({
             data: response,
             success: true,
-            message: 'Successfully Fetch a city',
+            message: 'Successfully fetched a city',
             err: {}
         });
-    }
-    catch(error){
+    } catch (error) {
         console.log(error);
         return res.status(500).json({
-            data:{},
+            data: {},
             success: false,
-            message: 'Not able to Get the city',
+            message: 'Not able to get the city',
             err: error
         });
-    } 
+    }
 }
 
 //PATCH-> /city/id-> req.body
