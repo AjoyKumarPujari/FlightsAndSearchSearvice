@@ -6,6 +6,8 @@ const { PORT } = require('./config/serverConfig');
 //const CityRepository = require('./repository/city-repository');
 const ApiRoutes = require('./routes/index');
 
+
+
 const setupAndStartServer = async () => {
      //create a express object
      const app = express();
@@ -18,6 +20,10 @@ const setupAndStartServer = async () => {
 
      app.listen(PORT, async () => {
         console.log(`Server started at ${PORT}`);
+
+
+
+
       //Insert
       //   const repo = new CityRepository();
       //   repo.createCity({name:"Pune"});
