@@ -39,7 +39,7 @@ module.exports = {
     },
     {
       modelNumber: 'Airbus A330',
-      capacity: 160,
+      capacity : 160,
       createdAt : new Date(),
       updatedAt : new Date()
     }
